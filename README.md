@@ -109,26 +109,3 @@ call the function when the time comes.
 Refresh your browser and try out the latest version of the code in the console
 to verify that it works. Also try passing `clickAlert()` as the second argument
 rather than `clickAlert` and see what happens.
-
-## Passing the Tests
-
-Now let's set up `index.js` to do the same thing so we can get our test passing.
-To do that, simply copy the code into the `index.js` file's
-`addingEventListener()` function and run the test. Either version should pass
-the test — just make sure that the code creating the event listener is **inside**
-the `addingEventListener()` function.
-
-### Checking the Code in the Browser
-
-We know that the code works in the console and passes the test, but we should
-also check our changes to `index.js` in the browser. Because you've added the
-`addEventListener()` function _inside_ the `addingEventListener()` function,
-recall that you will need to call the outer function in `index.js` to execute
-`addEventListener()` and activate the event listener. Be sure to refresh the
-page to load the new code in `index.js`.
-
-## Resources
-
-- [MDN - Web Events](https://developer.mozilla.org/en-US/docs/Web/Events)
-
-[callback]: https://developer.mozilla.org/en-US/docs/Glossary/Callback_function
